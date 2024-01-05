@@ -104,7 +104,9 @@ class TuyaValve(CustomDevice):
     """Tuya valve device."""
 
     signature = {
-        MODELS_INFO: [("_TZE200_81isopgh", "TS0601")],
+        MODELS_INFO: [
+            ("_TZE200_81isopgh", "TS0601"),
+        ],
         # SizePrefixedSimpleDescriptor(endpoint=1, profile=260, device_type=81, device_version=1,
         # input_clusters=[0, 4, 5, 61184], output_clusters=[25, 10])
         ENDPOINTS: {
@@ -245,7 +247,7 @@ class ParksidePSBZS(EnchantedDevice):
     """LIDL Parkside water without implemented scheduler."""
 
     signature = {
-        MODELS_INFO: [("_TZE200_htnnfasr", "TS0601")],  # HG06875
+        MODELS_INFO: [("_TZE200_htnnfasr", "TS0601"), ("_TZE200_xlppj4f5", "TS0601")],  # HG06875
         ENDPOINTS: {
             # <SimpleDescriptor endpoint=1 profile=260 device_type=0
             # device_version=1
