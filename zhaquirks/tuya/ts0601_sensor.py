@@ -20,7 +20,9 @@ from zhaquirks.const import (
     PROFILE_ID,
     SKIP_CONFIGURATION,
 )
+
 from zhaquirks.tuya import TuyaLocalCluster, TuyaPowerConfigurationCluster2AAA
+
 from zhaquirks.tuya.mcu import DPToAttributeMapping, TuyaMCUCluster
 
 
@@ -198,6 +200,7 @@ class TuyaTempHumiditySensor_Square(CustomDevice):
             ("_TZE200_a8sdabtg", "TS0601"),  # Variant without screen, round
             ("_TZE200_qoy0ekbd", "TS0601"),
             ("_TZE200_znbl8dj5", "TS0601"),
+            ("_TZE200_2se8efxh", "TS0601"),
         ],
         ENDPOINTS: {
             1: {
@@ -359,7 +362,6 @@ class SoilManufCluster(TuyaMCUCluster):
         15: "_dp_2_attr_update",
     }
 
-
 class TuyaSoilSensor(CustomDevice):
     """Tuya temp and humidity sensor (variation 03)."""
 
@@ -373,6 +375,7 @@ class TuyaSoilSensor(CustomDevice):
             ("_TZE200_ga1maeof", "TS0601"),
             ("_TZE200_9cqcpkgb", "TS0601"),
             ("_TZE204_myd45weu", "TS0601"),
+            ("_TZE200_2se8efxh", "TS0601"),
         ],
         ENDPOINTS: {
             1: {
